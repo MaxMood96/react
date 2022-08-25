@@ -46,8 +46,8 @@
     "confusing-browser-globals": "^1.0.9",
     "core-js": "^3.6.4",
     "coveralls": "^3.0.9",
-    "create-react-class": "^15.6.3",
-    "danger": "^9.2.10",
+    "create-react-class": "^15.7.0",
+    "danger": "^10.8.0",
     "error-stack-parser": "^2.0.6",
     "eslint": "^7.7.0",
     "eslint-config-fbjs": "^3.1.1",
@@ -64,7 +64,7 @@
     "filesize": "^6.0.1",
     "flow-bin": "0.97",
     "glob": "^7.1.6",
-    "glob-stream": "^6.1.0",
+    "glob-stream": "^7.0.0",
     "google-closure-compiler": "^20200517.0.0",
     "gzip-size": "^5.1.1",
     "jasmine-check": "^1.0.0-rc.0",
@@ -74,11 +74,11 @@
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "jest-snapshot-serializer-raw": "^1.1.0",
     "minimatch": "^3.0.4",
-    "minimist": "^1.2.3",
-    "mkdirp": "^0.5.1",
+    "minimist": "^1.2.6",
+    "mkdirp": "^0.5.2",
     "ncp": "^2.0.0",
     "object-assign": "^4.1.1",
-    "pacote": "^10.3.0",
+    "pacote": "^11.1.0",
     "prettier": "1.19.1",
     "prop-types": "^15.6.2",
     "random-seed": "^0.3.0",
@@ -141,6 +141,12 @@
     "version-check": "node ./scripts/tasks/version-check.js",
     "merge-fork": "node ./scripts/merge-fork/merge-fork.js",
     "replace-fork": "node ./scripts/merge-fork/replace-fork.js",
-    "publish-prereleases": "node ./scripts/release/publish-using-ci-workflow.js"
+    "publish-prereleases": "node ./scripts/release/publish-using-ci-workflow.js",
+    "prepare": "yarn run snyk-protect",
+    "snyk-protect": "snyk-protect"
+  },
+  "snyk": true,
+  "dependencies": {
+    "@snyk/protect": "latest"
   }
 }
