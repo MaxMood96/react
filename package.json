@@ -69,7 +69,7 @@
     "gzip-size": "^5.1.1",
     "jasmine-check": "^1.0.0-rc.0",
     "jest": "^25.2.7",
-    "jest-cli": "^25.2.7",
+    "jest-cli": "^26.0.0",
     "jest-diff": "^25.2.6",
     "jest-environment-jsdom-sixteen": "^1.0.3",
     "jest-snapshot-serializer-raw": "^1.1.0",
