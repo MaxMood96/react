@@ -35,8 +35,8 @@
     "cross-env": "^3.1.4",
     "css-loader": "^1.0.1",
     "raw-loader": "^3.1.0",
-    "style-loader": "^0.23.1",
-    "webpack": "^4.43.0",
+    "style-loader": "^3.0.0",
+    "webpack": "^5.0.0",
     "webpack-cli": "^3.3.11",
     "webpack-dev-server": "^3.10.3"
   }
